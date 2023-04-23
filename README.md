@@ -97,8 +97,6 @@ I am an adaptable, skilled, enthusiastic, and charming Fullstack Engineer with a
 Rapid Rating
 
 ```
-
-```
  1617.00  ┤
  1599.38  ┤      ╭╮                                                    ╭╮
  1581.75  ┤      ││                                                    ││
@@ -117,6 +115,5 @@ Rapid Rating
  1352.62  ┤                                                                              ││
  1335.00  ┤                                                                              ╰╯
 
-Chart last updated - Sun Apr 23 05:42:57 WAT 2023  
-  ```
-  
+Chart last updated - Sun Apr 23 05:42:57 WAT 2023
+```
