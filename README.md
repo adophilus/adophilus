@@ -5,7 +5,6 @@
 I am an adaptable, skilled, enthusiastic, and charming Fullstack Engineer with about four (4) years of personal experience in building and deploying robust and responsive web applications that address clients’ problems using VueJS & other web technologies. Expert at collaborating with remote teams across the world with the help of technologies like Git, Floobits, and others. I’m all out to solve your problem to the best of my capacity. I'm skilled in Python, NodeJs, PHP, Javascript, RDBMS (MySQL and PostgreSQL) and some other technologies.
 
 - 🌍   I'm based in Nigeria
-- 🖥️   See my portfolio at [portfolio.adophilus.xyz](http://portfolio.adophilus.xyz)
 - ✉️   You can contact me at [uchenna19of@gmail.com](mailto:uchenna19of@gmail.com) or hit me up on twitter [@adophilus](https://twitter.com/adophilus)
 - 📚   I'm learning Lua and React
 - 🤝   I'm open to collaborating on Projects
