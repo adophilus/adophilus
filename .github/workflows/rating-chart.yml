@@ -7,47 +7,52 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types:
-      - closed
+    paths-ignore:
+      - README.md
+      - .github/workflows/rating-chart.yml
   schedule:
-    - cron: "0 0 * * *"
-env:
-  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    - cron: "0 */2 * * *"
 jobs:
   ratings-chart:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
-        uses: actions/checkout@master
+      - uses: actions/checkout@master
         with:
           token: ${{ secrets.GH_TOKEN_1 }}
-          ref: dev
-      - name: setup python
-        uses: actions/setup-python@v2
+        name: Setup Python
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - name: install dependencies
-        run: pip install -r requirements.txt
-      - name: Create Chart
-        run: |
+        name: Install dependencies
+      - run: pip install -r requirements.txt
+        name: Create Chart
+      - run: |
           python codes/rating_chart.py > chart.txt
           CHART=$(cat chart.txt)
           echo "::set-output name=chart::$CHART"
-          cat assets/README-1.md > README.md
-          cat chart.txt >> README.md
-          currentDate=`env TZ=Africa/Lagos date`
+      - run: cat assets/README-1.md > README.md
+      - run: cat chart.txt >> README.md
+      - run: |
+          currentDate=`env TZ=America/New_York date`
           printf "\nChart last updated - ${currentDate}" >> README.md
-          cat assets/README-2.md >> README.md
-      - name: Update workflow yaml file
-        run: |
+      - run: cat assets/README-2.md >> README.md
+        name: Update workflow yaml file
+      - run: |
           python codes/generate_random_workflow.py > rating-yaml.txt
           YAML=$(cat rating-yaml.txt)
           echo "::set-output name=yaml::$YAML"
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+      - run: cat rating-yaml.txt > .github/workflows/rating-chart.yml
+      - id: changed
+        run: git diff --exit-code
+        continue-on-error: true
+        name: Commit changes
+      - if: ${{ steps.changed.outcome == 'failure' }}
+        uses: EndBug/add-and-commit@v4
         with:
-          add: README.md
-          author_name: Adophilus
-          author_email: uchenna19of@gmail.com
-          message: "Auto updating my readme"
+          author_name: Aditya Pal
+          author_email: aditya.pal.science@gmail.com
+          message: "Auto updating my readme and workflow timing!"
+          add: "README.md .github/workflows/rating-chart.yml"
+        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_1 }}
