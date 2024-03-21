@@ -7,7 +7,7 @@ import asciichartpy as ac
 import requests
 
 USERNAME = 'adophilus'
-TIME_CLASS = 'blitz'
+TIME_CLASS = 'rapid'
 RULES = 'chess' #chess960 and other variants possible here
 NGAMES = 100
 headers = {"User-Agent": "ChessRatingRefresh/1.0 aditya.pal.science@gmail.com"}
