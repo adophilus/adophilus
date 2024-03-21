@@ -1,38 +1,64 @@
 from collections import namedtuple
 import datetime
 import math
-import json
 import os
 import sys
 import asciichartpy as ac
 import requests
-from urllib.parse import urlencode
 
-USERNAME = "adophilus"
+USERNAME = 'adophilus'
+TIME_CLASS = 'rapid'
+RULES = 'chess' #chess960 and other variants possible here
 NGAMES = 100
-GAMES_URL = f"https://lichess.org/api/games/user/{USERNAME}?" + urlencode(
-    {"rated": "true", "perfType": "rapid", "moves": "false", "max": NGAMES}
-)
+headers = {"User-Agent": "ChessRatingRefresh/1.0 aditya.pal.science@gmail.com"}
+ARCHIVES_URL = 'https://api.chess.com/pub/player/{user}/games/archives'
+
+def get_archives() -> list:
+    archives_dict = requests.get(url=ARCHIVES_URL.format(user=USERNAME), headers=headers).json()
+    # print (archives_dict)
+    monthly_archives = archives_dict.get('archives')
+    if monthly_archives is None:
+        return  []
+    return monthly_archives[::-1]
 
 
-def getGames() -> list:
-    req = requests.get(GAMES_URL, headers={"Accept": "application/x-ndjson"})
-    return map(lambda g: json.loads(g), filter(None, req.text.split("\n")))
+def get_filtered_games(monthly_archive_url: str) -> list:
+    games_dict = requests.get(url=monthly_archive_url, headers=headers).json()
+    monthly_games = games_dict.get('games')
+    if monthly_games is None:
+        return []
+    _filtered_games = list(filter(lambda game: game['time_class'] == TIME_CLASS, monthly_games))
+    filtered_games = list(filter(lambda game: game['rules'] == RULES, _filtered_games))
+    return filtered_games[::-1]
+
+def get_ratings_from_games(games: list) -> list:
+    ratings = []
+    for game in games:
+        if game['white']['username'] == USERNAME:
+            ratings.append(game['white']['rating'])
+        else:
+            ratings.append(game['black']['rating'])
+    return ratings[::-1]
+
+def get_current_rating() -> int:
+    return 0
 
 
 def main():
-    games = getGames()
-    ratings = list(
-        map(
-            lambda g: g["players"]["white"]["rating"]
-            if (g["players"]["white"]["user"]["name"] == USERNAME)
-            else g["players"]["black"]["rating"],
-            games,
-        )
-    )
-    return ac.plot(ratings, {"height": 15})
+    final_games = []
+    archives = get_archives()
+    for archive in archives:
+        games = get_filtered_games(archive)
+        if games is not None:
+            final_games += games
+        if len(final_games) >= NGAMES:
+            break
+    final_games = final_games[:NGAMES]
+    ratings_list = get_ratings_from_games(final_games)
+    return (ac.plot(ratings_list, {'height': 15}))
 
 
 if __name__ == "__main__":
+
     plot = main()
-    print(plot)
+    print (plot)

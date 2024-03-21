@@ -1,21 +1,17 @@
 # <img width="32" src="assets/Hi.gif" alt="👋" /> Hi! I'm Uche
 
-## Fullstack Engineer
+## Fullstack Engineer | Problem Solver
 
-I am an adaptable, skilled, enthusiastic, and charming Fullstack Engineer with about four (4) years of personal experience in building and deploying robust and responsive web applications that address clients’ problems using VueJS & other web technologies. Expert at collaborating with remote teams across the world with the help of technologies like Git, Floobits, and others. I’m all out to solve your problem to the best of my capacity. I'm skilled in Python, NodeJs, PHP, Javascript, RDBMS (MySQL and PostgreSQL) and some other technologies.
+Highly motivated fullstack engineer with 4+ years of experience building and deploying robust web applications. Proven ability to solve client problems by delivering user-friendly and responsive web experiences. Adept at collaborating with remote teams using Git and other collaboration tools.
 
-- 🌍   I'm based in Nigeria
-- 🖥️   See my portfolio at [portfolio.adophilus.xyz](http://portfolio.adophilus.xyz)
-- ✉️   You can contact me at [uchenna19of@gmail.com](mailto:uchenna19of@gmail.com) or hit me up on twitter [@adophilus](https://twitter.com/adophilus)
-- 📚   I'm learning Lua and React
-- 🤝   I'm open to collaborating on Projects
+- 🖥️   See my portfolio at [portfolio.adophilus.xyz](https://adopphilus.github.io/portfolio-web)
+- ✉️    Contact me at [uchenna19of@gmail.com](mailto:uchenna19of@gmail.com) or hit me up on twitter [@adophilus](https://twitter.com/adophilus)
+- 📚   Currently exploring building progressive web applications
+- 🤝   Open to collaborating on Projects
 
 <a href="https://www.twitter.com/adophilus" target="_blank" rel="noreferrer">
   <img src="https://img.shields.io/twitter/follow/adophilus?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
-/></a><a href="https://www.github.com/adophilus" target="_blank" rel="noreferrer">
-  <img src="https://img.shields.io/github/followers/adophilus?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a><a href="https://www.github.com/adophilus" target="_blank" rel="noreferrer">
-  <img src="https://shields-io-visitor-counter.herokuapp.com/badge?page=adophilus.adophilus&label=Visits&labelColor=1c1917&logo=GitHub&logoColor=FFFFFF&color=0891b2&style=for-the-badge" />
-</a>
+/></a>
 
 ## Skills
 
@@ -90,9 +86,9 @@ I am an adaptable, skilled, enthusiastic, and charming Fullstack Engineer with a
   </a>
 </p>
 
-**I am currently aiming to reach an ELO of 1600 (rapid) on [Lichess](https://lichess.org) ♞. Here is an ASCII tracker of my 100 most recent [Lichess](https://lichess.org) rapid games.**
+**I am currently aiming to reach an ELO of 1500 (rapid) on [Chess.com](https://chess.com) ♞. Here is an ASCII tracker of my 100 most recent [Chess.com](https://chess.com) rapid games.**
 
-## ♟︎ Lichess Ratings Chart
+## ♟︎ Chess.com Ratings Chart
 
 Rapid Rating
 
