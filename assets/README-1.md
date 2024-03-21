@@ -2,7 +2,7 @@
 
 ## Fullstack Engineer | Problem Solver
 
-Highly motivated Fullstack Developer with 4+ years of experience building and deploying robust web applications. Proven ability to solve client problems by delivering user-friendly and responsive web experiences. Adept at collaborating with remote teams using Git and other collaboration tools.
+Highly motivated fullstack engineer with 4+ years of experience building and deploying robust web applications. Proven ability to solve client problems by delivering user-friendly and responsive web experiences. Adept at collaborating with remote teams using Git and other collaboration tools.
 
 - 🖥️   See my portfolio at [portfolio.adophilus.xyz](https://adopphilus.github.io/portfolio-web)
 - ✉️    Contact me at [uchenna19of@gmail.com](mailto:uchenna19of@gmail.com) or hit me up on twitter [@adophilus](https://twitter.com/adophilus)
