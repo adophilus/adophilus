@@ -11,10 +11,7 @@ Highly motivated Fullstack Developer with 4+ years of experience building and de
 
 <a href="https://www.twitter.com/adophilus" target="_blank" rel="noreferrer">
   <img src="https://img.shields.io/twitter/follow/adophilus?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
-/></a><a href="https://www.github.com/adophilus" target="_blank" rel="noreferrer">
-  <img src="https://img.shields.io/github/followers/adophilus?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a><a href="https://www.github.com/adophilus" target="_blank" rel="noreferrer">
-  <img src="https://shields-io-visitor-counter.herokuapp.com/badge?page=adophilus.adophilus&label=Visits&labelColor=1c1917&logo=GitHub&logoColor=FFFFFF&color=0891b2&style=for-the-badge" />
-</a>
+/></a>
 
 ## Skills
 
@@ -89,9 +86,9 @@ Highly motivated Fullstack Developer with 4+ years of experience building and de
   </a>
 </p>
 
-**I am currently aiming to reach an ELO of 1600 (rapid) on [Lichess](https://lichess.org) ♞. Here is an ASCII tracker of my 100 most recent [Lichess](https://lichess.org) rapid games.**
+**I am currently aiming to reach an ELO of 1500 (rapid) on [Chess.com](https://chess.com) ♞. Here is an ASCII tracker of my 100 most recent [Chess.com](https://chess.com) rapid games.**
 
-## ♟︎ Lichess Ratings Chart
+## ♟︎ Chess.com Ratings Chart
 
 Rapid Rating
 
