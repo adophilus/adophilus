@@ -64,9 +64,7 @@ Highly motivated fullstack engineer with 4+ years of experience building and dep
 
 ## ℹ️ GitHub Stats
 
-<a href="http://www.github.com/adophilus">
-  <img src="https://activity-graph.herokuapp.com/graph?username=adophilus&bg_color=1c1917&color=ffffff&line=0891b2&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph" alt="GitHub Commits Graph" />
-</a>
+[![Adophilus' github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=adophilus&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true)](https://github.com/adophilus)
 
 <p align="center">
   <a href="https://github.com/adophilus" align="left">
@@ -86,10 +84,10 @@ Highly motivated fullstack engineer with 4+ years of experience building and dep
   </a>
 </p>
 
-**I am currently aiming to reach an ELO of 1500 (rapid) on [Chess.com](https://chess.com) ♞. Here is an ASCII tracker of my 100 most recent [Chess.com](https://chess.com) rapid games.**
-
-## ♟︎ Chess.com Ratings Chart
-
-Rapid Rating
-
-```
+<!-- **I am currently aiming to reach an ELO of 1500 (rapid) on [Chess.com](https://chess.com) ♞. Here is an ASCII tracker of my 100 most recent [Chess.com](https://chess.com) rapid games.** -->
+<!---->
+<!-- ## ♟︎ Chess.com Ratings Chart -->
+<!---->
+<!-- Rapid Rating -->
+<!---->
+<!-- ``` -->
